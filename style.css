@@ -1,0 +1,89 @@
+body {
+    background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.card {
+    background: #e6caca;
+    padding: 25px;
+    width: 500px;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+#message {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+#birthdayPic {
+    display: none;
+    width: 180px;
+    height: auto;
+    max-width: none;
+    margin: 15px auto;
+    border-radius: 15px;
+}
+
+/* Cake */
+.cake {
+    display: none;
+    margin-top: 20px;
+    animation: fadeIn 1s ease;
+}
+
+.layer {
+    width: 180px;
+    height: 35px;
+    margin: 6px auto;
+    border-radius: 12px;
+}
+
+.layer-top {
+    background: #ffcad4;
+}
+
+.layer-middle {
+    background: #ffd6a5;
+}
+
+.layer-bottom {
+    background: #cdb4db;
+}
+
+/* Candle */
+.candle {
+    width: 12px;
+    height: 35px;
+    background: #ffffff;
+    margin: auto;
+    position: relative;
+    border-radius: 5px;
+}
+
+.flame {
+    width: 14px;
+    height: 20px;
+    background: radial-gradient(circle, #ffdd00, #ff8500);
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+    left: -1px;
+    animation: flicker 0.4s infinite alternate;
+}
+
+@keyframes flicker {
+    from { transform: scale(1); }
+    to { transform: scale(1.15); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
